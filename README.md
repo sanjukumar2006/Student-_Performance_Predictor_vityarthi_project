@@ -18,3 +18,23 @@ Predict student exam performance using machine learning.
  
  Predicted final marks or
  Performance category (High / Medium / Low)
+
+# File structure:
+
+student-performance-predictor-ai
+│
+├── data
+│   └── students.csv
+│
+├── model
+│   └── train_model.py
+│
+├── app
+│   └── predictor.py
+│
+├── utils
+│   └── performance.py
+│
+├── requirements.txt
+│
+└── README.md
