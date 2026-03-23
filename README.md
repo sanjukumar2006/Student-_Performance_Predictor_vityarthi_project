@@ -22,19 +22,19 @@ Predict student exam performance using machine learning.
 # File structure:
 
 student-performance-predictor-ai
-│
+# │
 ├── data
 │   └── students.csv
-│
+# │
 ├── model
 │   └── train_model.py
-│
+# │
 ├── app
 │   └── predictor.py
-│
+# │
 ├── utils
 │   └── performance.py
-│
+# │
 ├── requirements.txt
-│
+# │
 └── README.md
