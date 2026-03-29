@@ -59,8 +59,13 @@ vityarthi_project
 │   ├── train_model.py
 │   └── model.pkl
 │
-├── prediction.py
+├── app
+│   └── prediction.py
 │
+├── utils
+│   └── performance.py
+│
+├── Student Performance Predictor.docx
 ├── requirements.txt
 └── README.md
 ```
