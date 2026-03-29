@@ -69,39 +69,23 @@ vityarthi_project
 
 # ⚙️ How It Works
 
-## Step 1 — Training Phase
+## Training Phase
 
-`train_model.py`
+* Dataset is loaded using pandas
+* Features and target selected
+* Linear Regression model trained
+* Model saved as `model.pkl`
 
-* Reads dataset using pandas
-* Splits input and output
-* Trains Linear Regression model
-* Saves model using pickle
+## Prediction Phase
 
-Output file created:
-
-```
-model/model.pkl
-```
-
-This file contains trained AI model.
-
----
-
-## Step 2 — Prediction Phase
-
-`prediction.py`
-
-* Loads model.pkl
-* Takes user input
-* Predicts final marks
-* Classifies performance
+* Load saved model
+* Take user inputs
+* Predict final marks
+* Classify performance
 
 ---
 
 # 📥 Inputs
-
-The model uses 5 features:
 
 | Feature        | Description             |
 | -------------- | ----------------------- |
@@ -128,17 +112,76 @@ Categories:
 
 ---
 
-# ▶️ How To Run
+# 🧰 Dependencies
 
-## 1 Install dependencies
+This project requires:
+
+* Python 3.8 or higher
+* pandas
+* numpy
+* scikit-learn
+
+---
+
+# ⚙️ Setup Instructions
+
+## Step 1 — Download or Clone Project
+
+Download the project folder:
+
+```
+vityarthi_project
+```
+
+---
+
+## Step 2 — Install Dependencies
+
+Open terminal in project folder and run:
 
 ```
 pip install -r requirements.txt
 ```
 
+This installs:
+
+* pandas
+* numpy
+* scikit-learn
+
 ---
 
-## 2 Train Model
+# ⚙️ Configuration Steps
+
+No special configuration required.
+
+Make sure following files exist:
+
+Dataset:
+
+```
+data/student.csv
+```
+
+Training script:
+
+```
+model/train_model.py
+```
+
+Prediction script:
+
+```
+prediction.py
+```
+
+---
+
+# ▶️ Execution Steps
+
+## Step 1 — Train Model
+
+Run:
 
 ```
 python model/train_model.py
@@ -150,9 +193,17 @@ Output:
 Model trained and saved!
 ```
 
+This creates:
+
+```
+model/model.pkl
+```
+
 ---
 
-## 3 Run Prediction
+## Step 2 — Run Prediction
+
+Run:
 
 ```
 python prediction.py
@@ -181,6 +232,18 @@ Performance: Medium
 
 ---
 
+# 🧠 What This Project Does
+
+This system:
+
+* Predicts student final marks
+* Classifies performance level
+* Identifies weak students early
+* Helps teachers take action
+* Provides data-driven insights
+
+---
+
 # 🧰 Technologies Used
 
 * Python
@@ -205,8 +268,7 @@ Performance: Medium
 # 👨‍💻 Author
 
 Sanju Kumar
-
-AI & ML Student Performance Predictor Project
+Student Performance Predictor Project
 
 ---
 
@@ -219,5 +281,3 @@ AI & ML Student Performance Predictor Project
 ✅ Automated performance evaluation
 
 ---
-
-# 🔚 End
