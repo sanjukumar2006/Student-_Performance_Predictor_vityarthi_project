@@ -4,14 +4,14 @@ import pickle
 model = pickle.load(open(r'E:\Sanju\VIT college\sem 2\AI and ml\vityarthi_project\model\model.pkl','rb'))
 
 # Take input from user
-study_hours = float(input("Study hours: "))
-attendance = float(input("Attendance (%): "))
-previous_marks = float(input("Previous marks: "))
-assignments = float(input("Assignment completion (%): "))
-internal_test = float(input("Internal test score: "))
+study = float(input("Study hours:"))
+attend = float(input("Attendance:"))
+previous = float(input("Previous marks:"))
+assign = float(input("Assignment completion:"))
+internal = float(input("Internal score:"))
 
 # Prediction
-prediction = model.predict([[study_hours, attendance, previous_marks, assignments, internal_test]])
+prediction = model.predict([[study, attend, previous, assign, internal]])
 
 marks = prediction[0]
 
